@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image.about.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi there, my name is Nur Insyirah Husna binti Zulkifli, and I'm now studying Islamic Banking at UiTM Kota Bharu in Kelantan. My academic background represents my desire to learn about and make a contribution to the subject. I was passionate about discovering new experiences and opportunities that would enhance her personal and professional development, even outside of his academic pursuits. Furthermore, I proactively search for diverse endeavours that not only extend her perspectives but also boost her earnings, demonstrating her proactive attitude towards education and personal growth. Along with his academic endeavours, I saw to it that she worked part-time at Baskin Robbins on the weekends and in her spare time, demonstrating her excellent time management skills and strong work ethic. My active participation in the professional and academic spheres is a reflection of her desire to succeed and leave a lasting impact on the Islamic finance sector and beyond.</p> 
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('background')">Background</p>
+                        <p class="tab-links" onclick="opentab('interest')">Interest</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Adaptability</span><br>Seeking new experiences and engaging in diverse activities </li>
+                            <li><span>Multitasking</span><br>Managing both academic responsibilities and a part-time job</li>
+                            <li><span>Teamwork</span><br>Collaborating with colleagues at Baskin Robbins demonstrates teamwork skills</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="background">
+                        <ul>
+                            <li><span>2023 - Current</span><br>UiTM Kota Bharu, Kelantan</li>
+                            <li><span>2020 - 2023</span><br>UiTM Machang, Kelantan</li>
+                            <li><span>2018 - 2019</span><br>Sekolah Menengah Kebangsaan Zainab 1</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="interest">
+                        <ul>
+                            <li><span>Business</span><br>As a student, I enjoy doing business to supplement my income.</li>
+                            <li><span>Traveling</span><br>As it allows me to explore new cultures, meet diverse people, and experience different lifestyles, enriching my understanding of the world.</li>
+                            <li><span>Photography</span><br>As it allows me to capture moments, express creativity, and see the world from unique perspectives.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    
+    </script>
+</body>
+</html>
